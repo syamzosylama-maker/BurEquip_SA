@@ -1,3 +1,4 @@
+
 class Zone:
     def __init__(self, id_zone: int, designation: str, ville: str, departement: str):
         self.id_zone = id_zone
@@ -8,10 +9,6 @@ class Zone:
     def __str__(self):
         return f"Zone {self.id_zone} : {self.designation} ({self.ville} - {self.departement})"
 
-    def comparer_zone(self, autre_zone):
-        if isinstance(autre_zone, Zone):
-            return self.id_zone == autre_zone.id_zone
-        return False
 
 
 def controle_zone():
